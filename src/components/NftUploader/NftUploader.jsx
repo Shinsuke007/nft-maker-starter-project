@@ -24,6 +24,8 @@ const NftUploader = () => {
   const [recipeProcess, setRecipeProcess] = useState("");
   console.log("currentAccount: ", currentAccount);
 
+   
+
   //①
   //メタマスクに繋げる関数(画面起動時に呼び出す)
   const checkIfWalletIsConnected = async () => {
@@ -89,6 +91,9 @@ const NftUploader = () => {
       console.log("file.cid:",file.cid)
       askContractToMintNft(file.cid)
     }
+
+   
+    
   }
 
   //④
@@ -115,8 +120,16 @@ const NftUploader = () => {
         console.log(
           `Mined, see transaction: https://goerli.etherscan.io/tx/${nftTxn.hash}`
         );
+        let recipe = document.getElementById("recipe");
+        recipe.value = "";
+        //
+        let ingredient = document.getElementById("ingredient");
+        ingredient.value = "";
+        let process = document.getElementById("process");
+        process.value = "";
 
 
+      
         //
         // Event がemit される際に、コントラクトから送信される情報を受け取っています。
         // connectedContract.on("NewEpicNFTMinted", (from, tokenId) => {
@@ -208,18 +221,18 @@ const NftUploader = () => {
               {/* レシピ詳細入力エリア */}
               <div className='input-recipeName'>
                   <p>Recipe name</p>
-                  <textarea placeholder="Garlic sautéed shrimp.." onChange={onChangeName} cols="50" rows="2"></textarea>
+                  <textarea id="recipe" placeholder="Garlic sautéed shrimp.." onChange={onChangeName} cols="50" rows="2"></textarea>
               </div>
               <div className='inputArea'>
               
                 <div className='input-ingredient'>
                   <p>Ingredients</p>
-                  <textarea placeholder="220g shurimp.." onChange={onChangeIngredient} cols="50" rows="5"></textarea>
+                  <textarea id="ingredient" placeholder="220g shurimp.." onChange={onChangeIngredient} cols="50" rows="5"></textarea>
                 </div>
                 
                 <div className='input-process'>
                 <p>Process</p>
-                  <textarea placeholder='Sauté shrimp with garlic' onChange={onChangeProcess} cols="50" rows="10"></textarea>
+                  <textarea id="process" placeholder='Sauté shrimp with garlic' onChange={onChangeProcess} cols="50" rows="10"></textarea>
                 </div>
               </div>
 
