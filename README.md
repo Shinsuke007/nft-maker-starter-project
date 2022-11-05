@@ -2,7 +2,7 @@
 糖尿病患者及び糖尿病予備軍のための低糖質レシピオンチェーンNFTをmintするものです。
 [使用したtechstacks]：Solidity, react,[使用したBlockchain]：Goerli(テストネットワーク),[deployしたContract],https://github.com/Shinsuke007/smart-contract/blob/main/Web3Mint.sol
 ,[審査やテストのためにプロジェクトにアクセスする方法など]提出フォーム内のプロジェクトURLに記載,
-[手順]
+手順は下記
 1. "Connect to Wallet"ボタンを押しメタマスクと連携する。
 2. 画面上に表示された、下記2点入力する。
    ①recipe nameとingredientsとprocessに入力
