@@ -1,31 +1,115 @@
-.outerBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: none;
-    padding: 36px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 8px gray;
-    color: gray;
-  }
+.all{
+  background-color: black;
+  width: 100%;
+}
+/* ヘッダー部分 */
+.header{
+  width: 100%;
+  height: 70px;
+}
+.header-center{
+  color: white;
+  text-align: center;
+}
+.header-content{
+  display: flex;
+  width: 20%;
+  margin:0 auto; 
+}
+.header-image{
+  margin-top:3px;
+
+}
+.header-tekito{
+  margin-left: 20px;
+  padding-top: 6px;
+  font-size: 50px;
+  font-weight: bold;
+  display: inline-block;
+  background: linear-gradient(90deg, #4158D0, #C850C0 30%, #FFCC70);
+  background: -webkit-linear-gradient(0deg, #4158D0, #C850C0 30%, #FFCC70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 内容部分 */
+/* 左側 */
+.content{
+  display: flex;
+  width: 100%;
+  height: 900px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.sample{
+  color: white;
+  border-right: 1px solid gray;
+  width: 40%;
+}
+.content-letter{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
   
+
+}
+.sample-image{
+  text-align: center;
+}
+
+/* 右側(メニューの詳細部分) */
+.connect-wallet-button{
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 40px;
+  width: 30%;
+  height: 70px;
+  color: white;
+  background: linear-gradient(90deg, #4158D0, #C850C0 30%, #cb70ff);
+  background: -webkit-linear-gradient(0deg, #4158D0, #C850C0 30%, #cb70ff);
+}
+.rightContents{
+  display: flex;
+}
+.explanation{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.outerBox {
+  width: 60%;
+  text-align: center;
+  border: none;
+  color: white;
+  }
+.explanation-letter{
+  font-size: 30px;
+  margin-top: 0px;
+  font-weight: bold;
+  display: inline-block;
+  background: linear-gradient(90deg, #4158D0, #C850C0 30%, #FFCC70);
+  background: -webkit-linear-gradient(0deg, #4158D0, #C850C0 30%, #FFCC70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
   .outerBox h2 {
+    display: inline-block;
+    border-bottom: 1px solid gray;
     font-weight: 600;
     margin-top: 5px;
   }
-  
   .nftUplodeBox {
-    border: 2px dashed #2d6395;
-    padding: 35px 60px;
+    border: 2px dashed #2d9550;
+    padding:10px;
+    width: 50%;
+    margin:0 auto;
     position: relative;
   }
   
   .imageLogoAndText p {
     margin-bottom: 0px;
   }
-  
   .nftUploadInput {
     opacity: 0;
     position: absolute;
@@ -34,4 +118,38 @@
     width: 100%;
     height: 100%;
     cursor: pointer;
+  }
+
+ 
+  .inputArea{
+  
+    display: flex;
+    width: 100%;
+  }
+  .input-recipeName{
+    text-align: center;
+
+
+  }
+  .input-ingredient{
+    width: 50%;
+   
+  }
+  .input-process{
+    width: 50%;
+
+  }
+
+
+
+  /* フッター部分 */
+  .footer{
+    width:100%;
+    color: white;
+  }
+  .footer-div{
+    width:20%;
+    margin:0 auto;
+    text-align: center;
+
   }
